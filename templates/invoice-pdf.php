@@ -63,19 +63,26 @@ $logo = get_site_icon_url(256);
 </head>
 <body>
 
-  <div class="top">
-    <div>
-      <h1>Invoice</h1>
+  
+    <table width="100%" style="margin-bottom:18px;">
+  <tr>
+    <td style="vertical-align:top;">
+      <h1 style="margin:0 0 6px;">Invoice</h1>
       <div class="muted">Invoice number: <?php echo esc_html($inv_no ?: $invoice_id); ?></div>
       <div class="muted">Issue date: <?php echo esc_html($issue); ?></div>
-      <?php if ($due): ?><div class="muted">Due date: <?php echo esc_html($due); ?></div><?php endif; ?>
-    </div>
-    <div>
-      <?php if ($logo): ?>
-        <img class="logo" src="<?php echo esc_url($logo); ?>" alt="">
+      <?php if ($due): ?>
+        <div class="muted">Due date: <?php echo esc_html($due); ?></div>
       <?php endif; ?>
-    </div>
-  </div>
+    </td>
+
+    <td style="text-align:right; vertical-align:top;">
+      <?php if ($logo): ?>
+        <img src="<?php echo esc_url($logo); ?>" style="width:90px; height:auto;">
+      <?php endif; ?>
+    </td>
+  </tr>
+</table>
+
 
   <div class="grid">
     <div class="box">
