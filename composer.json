@@ -1,0 +1,6 @@
+{
+  "name": "meridian/mm-invoice-maker",
+  "require": {
+    "dompdf/dompdf": "^2.0"
+  }
+}
