@@ -128,32 +128,33 @@ $logo = get_site_icon_url(256);
     </tbody>
   </table>
 
-  <table width="260" style="margin-left:auto; margin-top:12px; border-collapse:collapse;">
+  <table style="width:260px; margin-left:auto; margin-top:12px; border-collapse:collapse;">
   <tr>
-    <td style="padding:6px 0;">Subtotal</td>
-    <td style="padding:6px 0; text-align:right; font-weight:bold;">
+    <td style="width:150px; padding:6px 0; text-align:left;">Subtotal</td>
+    <td style="width:110px; padding:6px 0; text-align:right; font-weight:bold;">
       <?php echo esc_html($currency . number_format($subtotal, 2)); ?>
     </td>
   </tr>
 
   <tr>
-    <td style="padding:6px 0;">
+    <td style="width:150px; padding:6px 0; text-align:left;">
       VAT (<?php echo esc_html(number_format($vat_percent, 2)); ?>%)
     </td>
-    <td style="padding:6px 0; text-align:right; font-weight:bold;">
+    <td style="width:110px; padding:6px 0; text-align:right; font-weight:bold;">
       <?php echo esc_html($currency . number_format($vat_amount, 2)); ?>
     </td>
   </tr>
 
   <tr>
-    <td style="padding:8px 0; font-size:14px; font-weight:bold; border-top:1px solid #ddd;">
+    <td style="width:150px; padding:8px 0; text-align:left; font-size:14px; font-weight:bold; border-top:1px solid #ddd;">
       Total
     </td>
-    <td style="padding:8px 0; text-align:right; font-size:14px; font-weight:bold; border-top:1px solid #ddd;">
+    <td style="width:110px; padding:8px 0; text-align:right; font-size:14px; font-weight:bold; border-top:1px solid #ddd;">
       <?php echo esc_html($currency . number_format($total, 2)); ?>
     </td>
   </tr>
 </table>
+
 
 
   <div class="footer">
